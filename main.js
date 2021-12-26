@@ -4040,6 +4040,8 @@ Game.Launch=function()
 			if (Game.Has('Undecillion fingers')) add*=	50;
 			if (Game.Has('Duodecillion fingers')) add*=	50;
 			if (Game.Has('Tredecillion fingers')) add*=	100;
+			if (Game.Has('Quattuordecillion fingers')) add*=	100;
+			if (Game.Has('Quindecillion fingers')) add*=	100;
 			
 			var num=0;
 			for (var i in Game.Objects) {num+=Game.Objects[i].amount;}
@@ -4058,6 +4060,8 @@ Game.Launch=function()
 			if (Game.Has('Technobsidian mouse')) add+=Game.cookiesPs*0.01;
 			if (Game.Has('Plasmarble mouse')) add+=Game.cookiesPs*0.01;
 			if (Game.Has('Miraculite mouse')) add+=Game.cookiesPs*0.01;
+			if (Game.Has('Rainbow mouse')) add+=Game.cookiesPs*0.03;
+			if (Game.Has('Awesome mouse')) add+=Game.cookiesPs*0.03;
 			
 			if (Game.Has('Fortune #104')) add+=Game.cookiesPs*0.01;
 			var mult=1;
@@ -4378,6 +4382,7 @@ Game.Launch=function()
 			if (Game.Has('Kitten angels')) catMult*=(1+Game.milkProgress*0.1*milkMult);
 			if (Game.Has('Fortune #103')) catMult*=(1+Game.milkProgress*0.05*milkMult);
 			if (Game.Has('Kitten masters')) catMult*=(1+Game.milkProgress*0.15*milkMult);
+			if (Game.Has('Kitten gamers')) catMult*=(1+Game.milkProgress*0.1*milkMult);
 			if (Game.Has('Kitten gods')) catMult*=(1+Game.milkProgress*0.2*milkMult);
 			if (Game.Has('Kitten elites')) catMult*=(1+Game.milkProgress*0.225*milkMult);
 			if (Game.Has('Kitten grandmasters')) catMult*=(1+Game.milkProgress*0.25*milkMult);
@@ -6386,6 +6391,7 @@ Game.Launch=function()
 					if (Game.Has('Kitten angels')) list.push('News : "Try to ignore any ghostly felines that may be purring inside your ears," warn scientists. "They\'ll just lure you into making poor life choices."');
 					if (Game.Has('Kitten wages')) list.push('News : kittens break glass ceiling! Do they have any idea how expensive those are!');
 					if (Game.Has('Kitten masters')) list.push('News : "Some mastery level for the kittens just makes them really overpowered especially if you were playing Ninja Kiwi games such as Bloons TD."');
+					if (Game.Has('Kitten gamers')) list.push('News : "Everyone is playing Bloons TD Battles thanks to the blessings of gaming kittens, whilst Ninja Kiwi\'s games is even more popular than Minecraft!"');
 					if (Game.Has('Kitten gods')) list.push('News : "The gods of heavenly kittens just gives you an blessing and they will make powerful sacrifices for cookies!"');
 					if (Game.Has('Kitten grandmasters')) list.push('News : "Guess we went too far nowadays, everything that the kittens have is inevitably godly!"');
 					if (Game.HasAchiev('Jellicles')) list.push('News : local kittens involved in misguided musical production, leave audience perturbed and unnerved.');
@@ -6674,6 +6680,12 @@ Game.Launch=function()
 					'Public aghast as all remaining aspects of their lives overtaken by universal cookie industry!',
 					'Every single product currently sold in the observable universe can be traced back to your company! And that\'s a good thing.',
 					'Antitrust laws let out a helpless whimper before being engulfed by your sprawling empire!'
+					]));
+					
+					if (Game.Objects['Bloons TD'].amount>0) list.push(choose([
+					'Everyone is playing Bloons Tower Defense all thanks to your investment!',
+					'NK got HUGE cookie profit from BTD, which is stupidly awesome and they successfully took over!',
+					'Monkes from Bloons TD games are throwing cookie-like projectiles at bloons for cookies!'
 					]));
 				}
 				
@@ -7753,6 +7765,8 @@ Game.Launch=function()
 			if (Game.Has('Undecillion fingers')) add*=	50;
 			if (Game.Has('Duodecillion fingers')) add*=	50;
 			if (Game.Has('Tredecillion fingers')) add*=	100;
+			if (Game.Has('Quattuordecillion fingers')) add*=	100;
+			if (Game.Has('Quindecillion fingers')) add*=	100;
 			var mult=1;
 			var num=0;
 			for (var i in Game.Objects) {if (Game.Objects[i].name!='Cursor') num+=Game.Objects[i].amount;}
@@ -7778,6 +7792,8 @@ Game.Launch=function()
 			if (this.amount>=550) Game.Unlock('Undecillion fingers');
 			if (this.amount>=600) Game.Unlock('Duodecillion fingers');
 			if (this.amount>=650) Game.Unlock('Tredecillion fingers');
+			if (this.amount>=700) Game.Unlock('Quattuordecillion fingers');
+			if (this.amount>=750) Game.Unlock('Quindecillion fingers');
 			
 			if (this.amount>=1) Game.Win('Click');if (this.amount>=2) Game.Win('Double-click');if (this.amount>=50) Game.Win('Mouse wheel');if (this.amount>=100) Game.Win('Of Mice and Men');if (this.amount>=200) Game.Win('The Digital');if (this.amount>=300) Game.Win('Extreme polydactyly');if (this.amount>=400) Game.Win('Dr. T');if (this.amount>=500) Game.Win('Thumbs, phalanges, metacarpals');if (this.amount>=600) Game.Win('With her finger and her thumb');if (this.amount>=700) Game.Win('Gotta hand it to you');if (this.amount>=800) Game.Win('The devil\'s workshop');
 		});
@@ -8058,6 +8074,7 @@ Game.Launch=function()
 			'Fractal engine':{name:'Senate seat',desc:'Only through political dominion can you truly alter this world to create a brighter, more cookie-friendly future.',icon:16},
 			'Javascript console':{name:'Doctrine',desc:'Taking many forms -religion, culture, philosophy- a doctrine may, when handled properly, cause a lasting impact on civilizations, reshaping minds and people and ensuring all future generations share a singular goal - the production, and acquisition, of more cookies.',icon:17},
 			'Idleverse':{name:'Lateral expansions',desc:'Sometimes the best way to keep going up is sideways. Diversify your ventures through non-cookie investments.',icon:18},
+			'Bloons TD':{name:'Bloons universe',desc:'It seems obvious having BTD to takeover, but it\'s going to make everyone addictive to it and giving free cookies who plays NK games.',icon:18},
 		};
 		
 		
@@ -10126,6 +10143,11 @@ Game.Launch=function()
 		
 		order=20000;
 		new Game.Upgrade('Kitten executives','You gain <b>more CpS</b> the more milk you have.<q>ready to execute whatever and whoever you\'d like, sir</q>',900000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
+		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we love taking over cookie companies and expanding them, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',14));Game.last.kitten=1;Game.MakeTiered(Game.last,14,18);
+		new Game.Upgrade('Kitten gamers','You gain <b>more CpS</b> the more milk you have.<q>time to play some videogames for cookies, sir</q>',9000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',15));Game.last.kitten=1;Game.MakeTiered(Game.last,15,18);
+		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>guess we\'ve ranked higher than our masters level, sir</q>',900000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',16));Game.last.kitten=1;Game.MakeTiered(Game.last,16,18);
+		new Game.Upgrade('Kitten gods','You gain <b>more CpS</b> the more milk you have.<q>oh boy, looks like we can make heavenly powerful cookies with our godly powers, sir</q>',90000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',17));Game.last.kitten=1;Game.MakeTiered(Game.last,17,18);
+		new Game.Upgrade('Kitten grandmasters','You gain <b>more CpS</b> the more milk you have.<q>we are the best kittens than before, sir</q>',90000000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',18));Game.last.kitten=1;Game.MakeTiered(Game.last,18,18);
 		
 		
 		order=10020;
@@ -10212,7 +10234,15 @@ Game.Launch=function()
 		order=10300;
 		Game.NewUpgradeCookie({name:'Cosmic chocolate butter biscuit',desc:'Rewarded for owning 550 of everything.<br>Through some strange trick of magic or technology, looking at this cookie is like peering into a deep ocean of ancient stars. The origins of this biscuit are unknown; its manufacture, as far as your best investigators can tell, left no paper trail. From a certain angle, if you squint hard enough, you\'ll notice that a number of stars near the center are arranged to resemble the outline of your own face.',icon:[27,32],power:	10,price: 999999999999999999999999999999999999999999999999*butterBiscuitMult,locked:1});
 		
-		order=100;new Game.Upgrade('Nonillion fingers','Multiplies the gain from Thousand fingers by <b>20</b>.<q>Only for the freakiest handshakes.</q>',10000000000000000000000000,[12,31]);Game.MakeTiered(Game.last,13,0);
+		order=100;
+		new Game.Upgrade('Nonillion fingers','Multiplies the gain from Thousand fingers by <b>20</b>.<q>Only for the freakiest handshakes.</q>',10000000000000000000000000,[12,31]);Game.MakeTiered(Game.last,13,0);
+		new Game.Upgrade('Decillion fingers','Multiplies the gain from Thousand fingers by <b>50</b>.<q>Overflowing the power!</q>',100000000000000000000000000000,[13,31]);Game.MakeTiered(Game.last,14,0);
+		new Game.Upgrade('Undecillion fingers','Multiplies the gain from Thousand fingers by <b>50</b>.<q>Why have one decillion if you could have one undecillion and above?</q>',10000000000000000000000000000000000,[14,31]);Game.MakeTiered(Game.last,15,0);
+		new Game.Upgrade('Duodecillion fingers','Multiplies the gain from Thousand fingers by <b>50</b>.<q>This seems ludicrously unstable, but worth it!</q>',100000000000000000000000000000000000000000,[15,31]);Game.MakeTiered(Game.last,16,0);
+		new Game.Upgrade('Tredecillion fingers','Multiplies the gain from Thousand fingers by <b>100</b>.<q>Overflowing the power!</q>',1000000000000000000000000000000000000000000000000,[16,31]);Game.MakeTiered(Game.last,17,0);
+		new Game.Upgrade('Quattuordecillion fingers','Multiplies the gain from Thousand fingers by <b>100</b>.<q>Why have one decillion if you could have one undecillion and above?</q>',100000000000000000000000000000000000000000000000000000000,[17,31]);Game.MakeTiered(Game.last,18,0);
+		new Game.Upgrade('Quindecillion fingers','Multiplies the gain from Thousand fingers by <b>100</b>.<q>This seems ludicrously unstable, but worth it!</q>',1000000000000000000000000000000000000000000000000000000000000000000,[18,31]);Game.MakeTiered(Game.last,19,0);
+		
 		order=150;new Game.Upgrade('Miraculite mouse','Clicking gains <b>+1% of your CpS</b>.<q>Composed of a material that neither science nor philosophy are equipped to conceptualize. And boy, does it ever click.</q>',50000000000000000000000000000,[11,31]);Game.MakeTiered(Game.last,13,11);
 		order=200;new Game.TieredUpgrade('Generation degeneration','Grandmas are <b>twice</b> as efficient.<q>Genetic testing shows that most of your grandmas are infected with a strange degenerative disease that only seems to further their powers; the more time passes, the older they get. This should concern you.</q>','Grandma',12);
 		order=300;new Game.TieredUpgrade('Global seed vault','Farms are <b>twice</b> as efficient.<q>An enormous genetic repository that could outlive an apocalypse. Guarantees the survival of your empire, or at the very least its agricultural components, should civilization fall. Which should be any day now.</q>','Farm',12);
