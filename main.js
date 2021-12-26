@@ -10245,8 +10245,8 @@ Game.Launch=function()
 		
 		order=150;
 		new Game.Upgrade('Miraculite mouse','Clicking gains <b>+1% of your CpS</b>.<q>Composed of a material that neither science nor philosophy are equipped to conceptualize. And boy, does it ever click.</q>',50000000000000000000000000000,[11,31]);Game.MakeTiered(Game.last,13,11);
-		new Game.Upgrade('Rainbow mouse','Clicking gains <b>+3% of your CpS</b>.<q>Most godlike cursor which was ever made in existence.</q>',50000000000000000000000000000,[12,31]);Game.MakeTiered(Game.last,14,11);
-		new Game.Upgrade('Awesome mouse','Clicking gains <b>+3% of your CpS</b>.<q>Does give cumulative cookies per click, and oh boy, it\'s even more awesome than before and it can do anything for you!</q>',50000000000000000000000000000,[13,31]);Game.MakeTiered(Game.last,15,11);
+		new Game.Upgrade('Rainbow mouse','Clicking gains <b>+3% of your CpS</b>.<q>Most godlike cursor which was ever made in existence.</q>',5000000000000000000000000000000,[11,31]);Game.MakeTiered(Game.last,13,11);
+		new Game.Upgrade('Awesome mouse','Clicking gains <b>+3% of your CpS</b>.<q>Does give cumulative cookies per click, and oh boy, it\'s even more awesome than before and it can do anything for you!</q>',500000000000000000000000000000000,[11,31]);Game.MakeTiered(Game.last,13,11);
 		
 		order=200;new Game.TieredUpgrade('Generation degeneration','Grandmas are <b>twice</b> as efficient.<q>Genetic testing shows that most of your grandmas are infected with a strange degenerative disease that only seems to further their powers; the more time passes, the older they get. This should concern you.</q>','Grandma',12);
 		order=300;new Game.TieredUpgrade('Global seed vault','Farms are <b>twice</b> as efficient.<q>An enormous genetic repository that could outlive an apocalypse. Guarantees the survival of your empire, or at the very least its agricultural components, should civilization fall. Which should be any day now.</q>','Farm',12);
