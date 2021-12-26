@@ -146,7 +146,7 @@ function rawFormatter(val){return Math.round(val*1000)/1000;}
 
 var formatLong=[' thousand',' million',' billion',' trillion',' quadrillion',' quintillion',' sextillion',' septillion',' octillion',' nonillion'];
 var prefixes=['','un','duo','tre','quattuor','quin','sex','septen','octo','novem'];
-var suffixes=['decillion','vigintillion','trigintillion','quadragintillion','quinquagintillion','sexagintillion','septuagintillion','octogintillion','nonagintillion'];
+var suffixes=['decillion','vigintillion','trigintillion','quadragintillion','quinquagintillion','sexagintillion','septuagintillion','octogintillion','nonagintillion','centillion'];
 for (var i in suffixes)
 {
 	for (var ii in prefixes)
@@ -157,7 +157,7 @@ for (var i in suffixes)
 
 var formatShort=['k','M','B','T','Qa','Qi','Sx','Sp','Oc','No'];
 var prefixes=['','Un','Do','Tr','Qa','Qi','Sx','Sp','Oc','No'];
-var suffixes=['D','V','T','Qa','Qi','Sx','Sp','O','N'];
+var suffixes=['D','V','T','Qa','Qi','Sx','Sp','O','N','C'];
 for (var i in suffixes)
 {
 	for (var ii in prefixes)
@@ -1628,7 +1628,7 @@ Game.Launch=function()
 		=======================================================================================*/
 		Game.RandomBakeryName=function()
 		{
-			return (Math.random()>0.05?(choose(['Magic','Fantastic','Fancy','Sassy','Snazzy','Pretty','Cute','Pirate','Ninja','Zombie','Robot','Radical','Urban','Cool','Hella','Sweet','Awful','Double','Triple','Turbo','Techno','Disco','Electro','Dancing','Wonder','Mutant','Space','Science','Medieval','Future','Captain','Bearded','Lovely','Tiny','Big','Fire','Water','Frozen','Metal','Plastic','Solid','Liquid','Moldy','Shiny','Happy','Happy Little','Slimy','Tasty','Delicious','Hungry','Greedy','Lethal','Professor','Doctor','Power','Chocolate','Crumbly','Choklit','Righteous','Glorious','Mnemonic','Psychic','Frenetic','Hectic','Crazy','Royal','El','Von'])+' '):'Mc')+choose(['Cookie','Biscuit','Muffin','Scone','Cupcake','Pancake','Chip','Sprocket','Gizmo','Puppet','Mitten','Sock','Teapot','Mystery','Baker','Cook','Grandma','Click','Clicker','Spaceship','Factory','Portal','Machine','Experiment','Monster','Panic','Burglar','Bandit','Booty','Potato','Pizza','Burger','Sausage','Meatball','Spaghetti','Macaroni','Kitten','Puppy','Giraffe','Zebra','Parrot','Dolphin','Duckling','Sloth','Turtle','Goblin','Pixie','Gnome','Computer','Pirate','Ninja','Zombie','Robot']);
+			return (Math.random()>0.05?(choose(['Magic','Fantastic','Fancy','Sassy','Snazzy','Pretty','Cute','Pirate','Ninja','Zombie','Robot','Radical','Urban','Cool','Hella','Sweet','Awful','Double','Triple','Turbo','Techno','Disco','Electro','Dancing','Wonder','Mutant','Space','Science','Medieval','Future','Captain','Bearded','Lovely','Tiny','Big','Fire','Water','Frozen','Metal','Plastic','Solid','Liquid','Moldy','Shiny','Happy','Happy Little','Slimy','Tasty','Delicious','Hungry','Greedy','Lethal','Professor','Doctor','Power','Chocolate','Crumbly','Choklit','Righteous','Glorious','Mnemonic','Psychic','Frenetic','Hectic','Crazy','Royal','El','Von'])+' '):'Mc')+choose(['Cookie','Biscuit','Muffin','Scone','Cupcake','Pancake','Chip','Sprocket','Gizmo','Puppet','Mitten','Sock','Teapot','Mystery','Baker','Cook','Grandma','Click','Clicker','Spaceship','Factory','Portal','Machine','Experiment','Monster','Panic','Burglar','Bandit','Booty','Potato','Pizza','Burger','Sausage','Meatball','Spaghetti','Macaroni','Kitten','Puppy','Giraffe','Zebra','Parrot','Dolphin','Duckling','Sloth','Turtle','Goblin','Pixie','Gnome','Computer','Pirate','Ninja','Zombie','Robot','Other']);
 		}
 		Game.GetBakeryName=function() {return Game.RandomBakeryName();}
 		Game.bakeryName=Game.GetBakeryName();
@@ -1874,7 +1874,7 @@ Game.Launch=function()
 		
 		Game.externalDataLoaded=false;
 		
-		Game.grandmaNames=['Granny','Gusher','Ethel','Edna','Doris','Maud','Hilda','Gladys','Michelle','Michele','Phyllis','Millicent','Muriel','Myrtle','Mildred','Mavis','Helen','Gloria','Sheila','Betty','Gertrude','Agatha','Beryl','Agnes','Pearl','Precious','Ruby','Vera','Bonnie','Ada','Bunny','Cookie','Darling','Gaga','GamGam','Memaw','Mimsy','Peanut','Nana','Nan','Tootsie','Warty','Stinky','Heinous'];
+		Game.grandmaNames=['Granny','Gusher','Ethel','Edna','Doris','Maud','Hilda','Gladys','Michelle','Michele','Phyllis','Millicent','Muriel','Myrtle','Mildred','Mavis','Helen','Gloria','Sheila','Betty','Gertrude','Agatha','Beryl','Agnes','Pearl','Precious','Ruby','Vera','Bonnie','Ada','Bunny','Cookie','Darling','Gaga','GamGam','Memaw','Mimsy','Peanut','Nana','Nan','Tootsie','Warty','Stinky','Heinous','JamByte','Maycrom','Anime'];
 		Game.customGrandmaNames=[];
 		Game.heralds=0;
 		
@@ -4036,6 +4036,10 @@ Game.Launch=function()
 			if (Game.Has('Septillion fingers')) add*=	20;
 			if (Game.Has('Octillion fingers')) add*=	20;
 			if (Game.Has('Nonillion fingers')) add*=	20;
+			if (Game.Has('Decillion fingers')) add*=	50;
+			if (Game.Has('Undecillion fingers')) add*=	50;
+			if (Game.Has('Duodecillion fingers')) add*=	50;
+			if (Game.Has('Tredecillion fingers')) add*=	100;
 			
 			var num=0;
 			for (var i in Game.Objects) {num+=Game.Objects[i].amount;}
@@ -4373,6 +4377,10 @@ Game.Launch=function()
 			if (Game.Has('Kitten executives')) catMult*=(1+Game.milkProgress*0.115*milkMult);
 			if (Game.Has('Kitten angels')) catMult*=(1+Game.milkProgress*0.1*milkMult);
 			if (Game.Has('Fortune #103')) catMult*=(1+Game.milkProgress*0.05*milkMult);
+			if (Game.Has('Kitten masters')) catMult*=(1+Game.milkProgress*0.15*milkMult);
+			if (Game.Has('Kitten gods')) catMult*=(1+Game.milkProgress*0.2*milkMult);
+			if (Game.Has('Kitten elites')) catMult*=(1+Game.milkProgress*0.225*milkMult);
+			if (Game.Has('Kitten grandmasters')) catMult*=(1+Game.milkProgress*0.25*milkMult);
 			
 			Game.cookiesMultByType['kittens']=catMult;
 			
@@ -6377,6 +6385,9 @@ Game.Launch=function()
 					if (Game.Has('Kitten executives')) list.push('News : kittens strutting around in hot little business suits shouting cut-throat orders at their assistants, possibly the cutest thing this reporter has ever seen!');
 					if (Game.Has('Kitten angels')) list.push('News : "Try to ignore any ghostly felines that may be purring inside your ears," warn scientists. "They\'ll just lure you into making poor life choices."');
 					if (Game.Has('Kitten wages')) list.push('News : kittens break glass ceiling! Do they have any idea how expensive those are!');
+					if (Game.Has('Kitten masters')) list.push('News : "Some mastery level for the kittens just makes them really overpowered especially if you were playing Ninja Kiwi games such as Bloons TD."');
+					if (Game.Has('Kitten gods')) list.push('News : "The gods of heavenly kittens just gives you an blessing and they will make powerful sacrifices for cookies!"');
+					if (Game.Has('Kitten grandmasters')) list.push('News : "Guess we went too far nowadays, everything that the kittens have is inevitably godly!"');
 					if (Game.HasAchiev('Jellicles')) list.push('News : local kittens involved in misguided musical production, leave audience perturbed and unnerved.');
 				}
 				
@@ -6533,6 +6544,7 @@ Game.Launch=function()
 				else if (Game.cookiesEarned<10000000000000) list.push('Your cookies are rewriting the fundamental laws of the universe.');
 				else if (Game.cookiesEarned<10000000000000) list.push('A local news station runs a 10-minute segment about your cookies. Success!<br><span style="font-size:50%;">(you win a cookie)</span>');
 				else if (Game.cookiesEarned<10100000000000) list.push('it\'s time to stop playing');//only show this for 100 millions (it's funny for a moment)
+				else if (Game.cookiesEarned<100000000000000000) list.push('We\'ve got too many cookies, that means we can buy Ninja Kiwi and their Bloons Games so we can modify the heck out of them lul');//only show this for 1 trillions (it's funny though)
 			}
 			
 			//if (Game.elderWrath>0 && (Game.pledges==0 || Math.random()<0.2))
@@ -6677,6 +6689,7 @@ Game.Launch=function()
 				else if (Game.cookiesEarned<5000000) list.push('Your brand has made its way into popular culture. Children recite your slogans and adults reminisce them fondly!');
 				else if (Game.cookiesEarned<1000000000) list.push('A business day like any other. It\'s good to be at the top!');
 				else if (Game.cookiesEarned<10100000000) list.push('You look back at your career. It\'s been a fascinating journey, building your baking empire from the ground up.');//only show this for 100 millions
+				else if (Game.cookiesEarned<100000000000000) list.push('With this ludicrous amount of cookies, we can buy gameing companies such as Ninja Kiwi!');//only show this for 1 trillions
 			}
 			
 			for (var i=0;i<Game.modHooks['ticker'].length;i++)
@@ -7724,7 +7737,7 @@ Game.Launch=function()
 		}
 		
 		//define objects
-		new Game.Object('Cursor','cursor|cursors|clicked|[X] extra finger|[X] extra fingers','Autoclicks once every 10 seconds.',0,0,{},15,function(me){
+		new Game.Object('Cursor','cursor|cursors|clicked|[X] extra finger|[X] extra fingers','Autoclicks once every 10 seconds.',0,0,{},10,function(me){
 			var add=0;
 			if (Game.Has('Thousand fingers')) add+=		0.1;
 			if (Game.Has('Million fingers')) add*=		5;
@@ -7736,6 +7749,10 @@ Game.Launch=function()
 			if (Game.Has('Septillion fingers')) add*=	20;
 			if (Game.Has('Octillion fingers')) add*=	20;
 			if (Game.Has('Nonillion fingers')) add*=	20;
+			if (Game.Has('Decillion fingers')) add*=	50;
+			if (Game.Has('Undecillion fingers')) add*=	50;
+			if (Game.Has('Duodecillion fingers')) add*=	50;
+			if (Game.Has('Tredecillion fingers')) add*=	100;
 			var mult=1;
 			var num=0;
 			for (var i in Game.Objects) {if (Game.Objects[i].name!='Cursor') num+=Game.Objects[i].amount;}
@@ -7757,6 +7774,10 @@ Game.Launch=function()
 			if (this.amount>=350) Game.Unlock('Septillion fingers');
 			if (this.amount>=400) Game.Unlock('Octillion fingers');
 			if (this.amount>=450) Game.Unlock('Nonillion fingers');
+			if (this.amount>=500) Game.Unlock('Decillion fingers');
+			if (this.amount>=550) Game.Unlock('Undecillion fingers');
+			if (this.amount>=600) Game.Unlock('Duodecillion fingers');
+			if (this.amount>=650) Game.Unlock('Tredecillion fingers');
 			
 			if (this.amount>=1) Game.Win('Click');if (this.amount>=2) Game.Win('Double-click');if (this.amount>=50) Game.Win('Mouse wheel');if (this.amount>=100) Game.Win('Of Mice and Men');if (this.amount>=200) Game.Win('The Digital');if (this.amount>=300) Game.Win('Extreme polydactyly');if (this.amount>=400) Game.Win('Dr. T');if (this.amount>=500) Game.Win('Thumbs, phalanges, metacarpals');if (this.amount>=600) Game.Win('With her finger and her thumb');if (this.amount>=700) Game.Win('Gotta hand it to you');if (this.amount>=800) Game.Win('The devil\'s workshop');
 		});
