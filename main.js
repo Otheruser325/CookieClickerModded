@@ -6392,6 +6392,7 @@ Game.Launch=function()
 					if (Game.Has('Kitten wages')) list.push('News : kittens break glass ceiling! Do they have any idea how expensive those are!');
 					if (Game.Has('Kitten masters')) list.push('News : "Some mastery level for the kittens just makes them really overpowered especially if you were playing Ninja Kiwi games such as Bloons TD."');
 					if (Game.Has('Kitten gamers')) list.push('News : "Everyone is playing Bloons TD Battles thanks to the blessings of gaming kittens, whilst Ninja Kiwi\'s games is even more popular than Minecraft!"');
+					if (Game.Has('Kitten elites')) list.push('News : "Looks like our elite kitten squad has managed to kill numerous cookie adversaries which tries to wreak havoc in the Cookieverse! Guess Cookienite has been confirmed."');
 					if (Game.Has('Kitten gods')) list.push('News : "The gods of heavenly kittens just gives you an blessing and they will make powerful sacrifices for cookies!"');
 					if (Game.Has('Kitten grandmasters')) list.push('News : "Guess we went too far nowadays, everything that the kittens have is inevitably godly!"');
 					if (Game.HasAchiev('Jellicles')) list.push('News : local kittens involved in misguided musical production, leave audience perturbed and unnerved.');
@@ -6549,7 +6550,7 @@ Game.Launch=function()
 				else if (Game.cookiesEarned<5000000000000) list.push('The universe has now turned into cookie dough, to the molecular level.');
 				else if (Game.cookiesEarned<10000000000000) list.push('Your cookies are rewriting the fundamental laws of the universe.');
 				else if (Game.cookiesEarned<10000000000000) list.push('A local news station runs a 10-minute segment about your cookies. Success!<br><span style="font-size:50%;">(you win a cookie)</span>');
-				else if (Game.cookiesEarned<10100000000000) list.push('it\'s time to stop playing');//only show this for 100 millions (it's funny for a moment)
+				else if (Game.cookiesEarned<10100000000000) list.push('it\'s time to stop playing');//only show this for 100 millions (it's funny for a moment);
 				else if (Game.cookiesEarned<100000000000000000) list.push('We\'ve got too many cookies, that means we can buy Ninja Kiwi and their Bloons Games so we can modify the heck out of them lul');//only show this for 1 trillions (it's funny though)
 			}
 			
@@ -6701,7 +6702,7 @@ Game.Launch=function()
 				else if (Game.cookiesEarned<5000000) list.push('Your brand has made its way into popular culture. Children recite your slogans and adults reminisce them fondly!');
 				else if (Game.cookiesEarned<1000000000) list.push('A business day like any other. It\'s good to be at the top!');
 				else if (Game.cookiesEarned<10100000000) list.push('You look back at your career. It\'s been a fascinating journey, building your baking empire from the ground up.');//only show this for 100 millions
-				else if (Game.cookiesEarned<100000000000000) list.push('With this ludicrous amount of cookies, we can buy gameing companies such as Ninja Kiwi!');//only show this for 1 trillions
+				else if (Game.cookiesEarned<100000000000000) list.push('With this ludicrous amount of cookies, we can buy gameing companies such as Ninja Kiwi!')//only show this for 1 trillions
 			}
 			
 			for (var i=0;i<Game.modHooks['ticker'].length;i++)
