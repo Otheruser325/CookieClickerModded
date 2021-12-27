@@ -13911,6 +13911,11 @@ Game.Launch=function()
 			if (Game.milkProgress>=10) Game.Unlock('Kitten marketeers');
 			if (Game.milkProgress>=11) Game.Unlock('Kitten analysts');
 			if (Game.milkProgress>=12) Game.Unlock('Kitten executives');
+			if (Game.milkProgress>=12.5) Game.Unlock('Kitten masters');
+			if (Game.milkProgress>=13) Game.Unlock('Kitten gamers');
+			if (Game.milkProgress>=13.5) Game.Unlock('Kitten elites');
+			if (Game.milkProgress>=14) Game.Unlock('Kitten gods');
+			if (Game.milkProgress>=15) Game.Unlock('Kitten grandmasters');
 			Game.milkH=Math.min(1,Game.milkProgress)*0.35;
 			Game.milkHd+=(Game.milkH-Game.milkHd)*0.02;
 			
