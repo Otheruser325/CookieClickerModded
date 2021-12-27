@@ -10143,11 +10143,11 @@ Game.Launch=function()
 		
 		order=20000;
 		new Game.Upgrade('Kitten executives','You gain <b>more CpS</b> the more milk you have.<q>ready to execute whatever and whoever you\'d like, sir</q>',900000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we love taking over cookie companies and expanding them, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',14));Game.last.kitten=1;Game.MakeTiered(Game.last,14,18);
-		new Game.Upgrade('Kitten gamers','You gain <b>more CpS</b> the more milk you have.<q>time to play some videogames for cookies, sir</q>',9000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',15));Game.last.kitten=1;Game.MakeTiered(Game.last,15,18);
-		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>guess we\'ve ranked higher than our masters level, sir</q>',900000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',16));Game.last.kitten=1;Game.MakeTiered(Game.last,16,18);
-		new Game.Upgrade('Kitten gods','You gain <b>more CpS</b> the more milk you have.<q>oh boy, looks like we can make heavenly powerful cookies with our godly powers, sir</q>',90000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',17));Game.last.kitten=1;Game.MakeTiered(Game.last,17,18);
-		new Game.Upgrade('Kitten grandmasters','You gain <b>more CpS</b> the more milk you have.<q>we are the best kittens than before, sir</q>',90000000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',18));Game.last.kitten=1;Game.MakeTiered(Game.last,18,18);
+		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we love taking over cookie companies and expanding them, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
+		new Game.Upgrade('Kitten gamers','You gain <b>more CpS</b> the more milk you have.<q>time to play some videogames for cookies, sir</q>',9000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
+		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>guess we\'ve ranked higher than our masters level, sir</q>',900000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
+		new Game.Upgrade('Kitten gods','You gain <b>more CpS</b> the more milk you have.<q>oh boy, looks like we can make heavenly powerful cookies with our godly powers, sir</q>',90000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
+		new Game.Upgrade('Kitten grandmasters','You gain <b>more CpS</b> the more milk you have.<q>we are the best kittens than before, sir</q>',90000000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
 		
 		
 		order=10020;
