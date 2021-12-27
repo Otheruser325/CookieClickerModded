@@ -10144,12 +10144,6 @@ Game.Launch=function()
 		
 		order=20000;
 		new Game.Upgrade('Kitten executives','You gain <b>more CpS</b> the more milk you have.<q>ready to execute whatever and whoever you\'d like, sir</q>',900000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we love taking over cookie companies and expanding them, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten gamers','You gain <b>more CpS</b> the more milk you have.<q>time to play some videogames for cookies, sir</q>',9000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>guess we\'ve ranked higher than our masters level, sir</q>',900000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten gods','You gain <b>more CpS</b> the more milk you have.<q>oh boy, looks like we can make heavenly powerful cookies with our godly powers, sir</q>',90000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		new Game.Upgrade('Kitten grandmasters','You gain <b>more CpS</b> the more milk you have.<q>we are the best kittens than before, sir</q>',90000000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
-		
 		
 		order=10020;
 		Game.NewUpgradeCookie({name:'Chai tea cookies',desc:'Not exactly Captain Picard\'s favorite, but I mean, these will do in a pinch.',icon:[23,32],power:						5,price: getCookiePrice(4)+5});Game.last.order=10020.5685;
@@ -10237,12 +10231,12 @@ Game.Launch=function()
 		
 		order=100;
 		new Game.Upgrade('Nonillion fingers','Multiplies the gain from Thousand fingers by <b>20</b>.<q>Only for the freakiest handshakes.</q>',10000000000000000000000000,[12,31]);Game.MakeTiered(Game.last,13,0);
-		new Game.Upgrade('Decillion fingers','Multiplies the gain from Thousand fingers by <b>50</b>.<q>Overflowing the power!</q>',100000000000000000000000000000,[13,31]);Game.MakeTiered(Game.last,14,0);
+		new Game.Upgrade('Decillion fingers','Multiplies the gain from Thousand fingers by <b>50</b>.<q>Overflowing the power!</q>',100000000000000000000000000000,[12,31]);Game.MakeTiered(Game.last,14,0);
 		new Game.Upgrade('Undecillion fingers','Multiplies the gain from Thousand fingers by <b>50</b>.<q>Why have one decillion if you could have one undecillion and above?</q>',10000000000000000000000000000000000,[14,31]);Game.MakeTiered(Game.last,15,0);
-		new Game.Upgrade('Duodecillion fingers','Multiplies the gain from Thousand fingers by <b>50</b>.<q>This seems ludicrously unstable, but worth it!</q>',100000000000000000000000000000000000000000,[15,31]);Game.MakeTiered(Game.last,16,0);
-		new Game.Upgrade('Tredecillion fingers','Multiplies the gain from Thousand fingers by <b>100</b>.<q>I guess getting cookies is 100% probable with this powerful thing.</q>',1000000000000000000000000000000000000000000000000,[16,31]);Game.MakeTiered(Game.last,17,0);
-		new Game.Upgrade('Quattuordecillion fingers','Multiplies the gain from Thousand fingers by <b>100</b>.<q>The prefix "Quattuor" seems weirdly good for a number like this lil\' cursor.</q>',100000000000000000000000000000000000000000000000000000000,[17,31]);Game.MakeTiered(Game.last,18,0);
-		new Game.Upgrade('Quindecillion fingers','Multiplies the gain from Thousand fingers by <b>100</b>.<q>There\'s no coming back. The cookies are everything and one click is enough to flood the world with ease.</q>',1000000000000000000000000000000000000000000000000000000000000000000,[18,31]);Game.MakeTiered(Game.last,19,0);
+		new Game.Upgrade('Duodecillion fingers','Multiplies the gain from Thousand fingers by <b>50</b>.<q>This seems ludicrously unstable, but worth it!</q>',100000000000000000000000000000000000000000,[12,31]);Game.MakeTiered(Game.last,16,0);
+		new Game.Upgrade('Tredecillion fingers','Multiplies the gain from Thousand fingers by <b>100</b>.<q>I guess getting cookies is 100% probable with this powerful thing.</q>',1000000000000000000000000000000000000000000000000,[12,31]);Game.MakeTiered(Game.last,17,0);
+		new Game.Upgrade('Quattuordecillion fingers','Multiplies the gain from Thousand fingers by <b>100</b>.<q>The prefix "Quattuor" seems weirdly good for a number like this lil\' cursor.</q>',100000000000000000000000000000000000000000000000000000000,[12,31]);Game.MakeTiered(Game.last,18,0);
+		new Game.Upgrade('Quindecillion fingers','Multiplies the gain from Thousand fingers by <b>100</b>.<q>There\'s no coming back. The cookies are everything and one click is enough to flood the world with ease.</q>',1000000000000000000000000000000000000000000000000000000000000000000,[12,31]);Game.MakeTiered(Game.last,19,0);
 		
 		order=150;
 		new Game.Upgrade('Miraculite mouse','Clicking gains <b>+1% of your CpS</b>.<q>Composed of a material that neither science nor philosophy are equipped to conceptualize. And boy, does it ever click.</q>',50000000000000000000000000000,[11,31]);Game.MakeTiered(Game.last,13,11);
@@ -10345,6 +10339,13 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Cashew cookies',desc:'Let me tell you about cashews. Cashews are not nuts, but seeds that grow out of curious red or yellow fruits - which can be eaten on their own, or made into drinks. The shell around the nut itself contains a nasty substance that stains and irritates the hands of whoever handles it for too long. But that\'s okay, since now that you\'ve read this you\'ll make sure it doesn\'t get in the cookies! Oh, you\'ve already eaten how many? Okay then.',icon:[32,7],power:							2,	price:	99999999});
 		order=10001;
 		Game.NewUpgradeCookie({name:'Milk chocolate cookies',desc:'A strange inversion of chocolate milk. For those who are a little bit too hardcore for white chocolate, but not hardcore enough for dark.',icon:[33,7],power:2,	price:	99999999*5});
+		
+		order=20000;
+		new Game.Upgrade('Kitten masters','You gain <b>more CpS</b> the more milk you have.<q>we love taking over cookie companies and expanding them, sir</q>',900000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
+		new Game.Upgrade('Kitten gamers','You gain <b>more CpS</b> the more milk you have.<q>time to play some videogames for cookies, sir</q>',9000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
+		new Game.Upgrade('Kitten elites','You gain <b>more CpS</b> the more milk you have.<q>guess we\'ve ranked higher than our masters level, sir</q>',900000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
+		new Game.Upgrade('Kitten gods','You gain <b>more CpS</b> the more milk you have.<q>oh boy, looks like we can make heavenly powerful cookies with our godly powers, sir</q>',90000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
+		new Game.Upgrade('Kitten grandmasters','You gain <b>more CpS</b> the more milk you have.<q>we are the best kittens than before, sir</q>',90000000000000000000000000000000000000000000000000000000000000000000,Game.GetIcon('Kitten',13));Game.last.kitten=1;Game.MakeTiered(Game.last,13,18);
 		
 		//end of upgrades
 		
